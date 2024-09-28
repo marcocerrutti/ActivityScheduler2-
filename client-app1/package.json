@@ -13,21 +13,27 @@
   "dependencies": {
     "@types/react-calendar": "^4.1.0",
     "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "formik": "^2.2.6",
     "mobx": "^6.13.1",
     "mobx-react-lite": "^4.0.7",
     "react": "^18.2.0",
     "react-calendar": "^5.0.0",
+    "react-datepicker": "^7.4.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.26.1",
     "react-toastify": "^10.0.5",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "3.0.0-beta.2",
-    "uuid": "^10.0.0"
+    "uuid": "^10.0.0",
+    "yup": "^0.32.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
+    "@types/react-datepicker": "^7.0.0",
     "@types/react-dom": "^18.2.22",
     "@types/uuid": "^10.0.0",
+    "@types/yup": "^0.32.0",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
