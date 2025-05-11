@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { router } from "../router/Routes";
 import { store } from "../stores/store";
 import { User, UserFormValues } from "../models/user";
-import { Photo } from "../models/profile";
+import { Photo, Profile } from "../models/profile";
 
 const sleep = (delay: number) => {
   return new Promise((resolve) => {
@@ -103,6 +103,8 @@ const Profiles = {
   },
   setMainPhoto:(id: string) => requests.post(`/photos/${id}/setMain`,{}),
   deletePhoto: (id: string) => requests.del(`/photos/${id}`),
+  updateFollowing: (username: string) => requests.post(`/follow/${username}`, {}),
+  listFollowings:(username: string, predicate: string) => requests.get<Profile[]>(`/follow/${username}?predicate=${predicate}`),
 }
 
 const agent = {
